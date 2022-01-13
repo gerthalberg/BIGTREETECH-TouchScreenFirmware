@@ -215,7 +215,7 @@
  *
  *   Options: [Percentage & Elapsed time: 0, Percentage & Remaining time: 1, Elapsed time & Remaining time: 2]
  */
-#define PROG_DISP_TYPE 2  // Default: 2
+#define PROG_DISP_TYPE 1  // Default: 2
 
 /**
  * Current Layer Display Mode During Print
@@ -240,7 +240,7 @@
  *
  *   Options: [Layer height: 0, Layer number: 1, Both - height & number: 2]
  */
-#define LAYER_DISP_TYPE 0  // Default: 0
+#define LAYER_DISP_TYPE 2  // Default: 0
 
 //================================================================================
 //============================= Marlin Mode Settings =============================
@@ -354,7 +354,7 @@
  * supports ontroller fan (M710).
  *   Options: [disable: 0, enable: 1]
  */
-#define CONTROLLER_FAN 0  // Default: 0
+#define CONTROLLER_FAN 1  // Default: 0
 
 /**
  * Bed / Extruder / Chamber Maximum Temperatures
@@ -396,9 +396,9 @@
 #define X_MIN_POS   0  // Default: 0
 #define Y_MIN_POS   0  // Default: 0
 #define Z_MIN_POS   0  // Default: 0
-#define X_MAX_POS 235  // Default: 235
-#define Y_MAX_POS 235  // Default: 235
-#define Z_MAX_POS 250  // Default: 250
+#define X_MAX_POS 400  // Default: 235
+#define Y_MAX_POS 400  // Default: 235
+#define Z_MAX_POS 400  // Default: 250
 
 /**
  * X & Y Move Speeds/Feedrates
