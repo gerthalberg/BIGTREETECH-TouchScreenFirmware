@@ -18,6 +18,7 @@ typedef enum
   LEVEL_TOP_RIGHT,        // top right bed corner
   LEVEL_TOP_LEFT,         // top left bed corner
   LEVEL_CENTER,           // center bed point
+  LEVEL_OFFSET,           // center bed point
   LEVELING_POINT_COUNT
 } LEVELING_POINT;
 

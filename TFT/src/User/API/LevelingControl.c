@@ -35,6 +35,8 @@ void levelingGetPointCoords(LEVELING_POINT_COORDS coords)
   coords[LEVEL_TOP_LEFT][1] = y_top;
   coords[LEVEL_CENTER][0] = (x_left + x_right) / 2;
   coords[LEVEL_CENTER][1] = (y_bottom + y_top) / 2;
+  coords[LEVEL_OFFSET][0] = 30;
+  coords[LEVEL_OFFSET][1] = 30;
 }
 
 LEVELING_POINT levelingGetPoint(int16_t x, int16_t y)
