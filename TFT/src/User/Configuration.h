@@ -36,7 +36,7 @@
  *                P4: [min: 0, max: 9]
  *   Options: [OFF (port disabled): 0, 2400: 1, 9600: 2, 19200: 3, 38400: 4, 57600: 5, 115200: 6, 250000: 7, 500000: 8, 1000000: 9]
  */
-#define SP_1 6  // Default: 6
+#define SP_1 7  // Default: 6
 #define SP_2 0  // Default: 0
 #define SP_3 0  // Default: 0
 #define SP_4 0  // Default: 0
@@ -177,7 +177,7 @@
  * Display files in list mode instead of icon mode.
  *   Options: [disable: 0, enable: 1]
  */
-#define FILES_LIST_MODE 1  // Default: 1
+#define FILES_LIST_MODE 0  // Default: 1
 
 /**
  * Fan Speed In Percentage
@@ -352,7 +352,7 @@
  * Extruder Count
  *   Value range: [min: 0, max: 6]
  */
-#define EXTRUDER_COUNT  1  // Default: 1
+#define EXTRUDER_COUNT  2  // Default: 1
 #define MIXING_EXTRUDER 0  // Default: 0. For mixing_extruder set to 1 (This option turns off autodetection
                            // of the number of extruders)
 
@@ -387,7 +387,7 @@
  *   Unit: [temperature in °C]
  *   Value range: [min: 20, max: 1000]
  */
-#define MIN_TEMP 180  // Default: 180
+#define MIN_TEMP 170  // Default: 180
 
 /**
  * Fan Maximum PWM Speed
@@ -565,7 +565,7 @@
  */
 #define LEVELING_EDGE_DISTANCE    20  // (mm) Inset distance from bed's edge for calculating leveling point location (Default: 20)
 #define LEVELING_Z_POS          0.2f  // (mm) Z-axis position when nozzle stays for leveling (Default: 0.2f)
-#define LEVELING_Z_RAISE       10.0f  // (mm) Z-axis position when nozzle move to next point (Default: 10.0f)
+#define LEVELING_Z_RAISE       5.0f  // (mm) Z-axis position when nozzle move to next point (Default: 10.0f)
 #define LEVELING_XY_FEEDRATE    6000  // (mm/min) X and Y axes move feedrate (Default: 6000)
 #define LEVELING_Z_FEEDRATE     6000  // (mm/min) Z axis move feedrate (Default: 6000)
 
@@ -618,7 +618,7 @@
  *   Unit: [distance in mm]
  *   Value range: [min: -2000.0, max: 2000.0]
  */
-#define PROBING_Z_RAISE 20.0f  // Default: 20.0f
+#define PROBING_Z_RAISE 5.0f  // Default: 20.0f
 
 /**
  * Z Steppers Auto-Alignment (ABL)
@@ -836,7 +836,7 @@
  * Knob LED color at startup.
  *   Options: [OFF: 0, WHITE: 1, RED: 2, ORANGE: 3, YELLOW: 4, GREEN: 5, BLUE: 6, INDIGO: 7, VIOLET: 8]
  */
-#define KNOB_LED_COLOR 1  // Default: 1
+#define KNOB_LED_COLOR 1  // Default: 6
 
 // Keep the LED state in Marlin Mode
 #define KEEP_KNOB_LED_COLOR_MARLIN_MODE  // Default: uncommented (enabled)
@@ -922,9 +922,9 @@
  * Start, End and Cancel G-code Status
  *   Options: [disable: 0, enable: 1]
  */
-#define START_GCODE_ENABLED  0  // Default: 0
-#define END_GCODE_ENABLED    0  // Default: 0
-#define CANCEL_GCODE_ENABLED 0  // Default: 0
+#define START_GCODE_ENABLED  1  // Default: 0
+#define END_GCODE_ENABLED    1  // Default: 0
+#define CANCEL_GCODE_ENABLED 1  // Default: 0
 
 /**
  * Start, End and Cancel G-code
@@ -1326,6 +1326,6 @@
  *                    require dedicated post-processing of gcode files for most slicers.
  *                    "RGB565 bitmap" and "Classic" are used as fallback.
  */
-#define THUMBNAIL_PARSER 0  // Default: 0
+#define THUMBNAIL_PARSER 2  // Default: 0
 
 #endif
